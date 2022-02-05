@@ -1,0 +1,91 @@
+:root {
+    --color-header: black;
+    --color-logo: red;
+    --color-ClickedBtn: blue;
+    --color-whiteText:white;
+    --color-grayText: gray;
+
+    --fontSize-header: 1.5rem;
+
+    --padding-nomal: 8px 12px;
+}
+
+* {
+    padding: 0px 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-header);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-whiteText);
+    font-size: var(--fontSize-header);
+} 
+
+#logoImg {
+    color:var(--color-logo);
+}
+
+.headerLogo, .headerMenu {
+    padding: var(--padding-nomal);
+}
+
+section {
+    /* width: 100vw;/ */
+    /* height: 100vh; */
+}
+
+section video {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    padding-top: 50px;
+}
+
+.videoInfo {
+    width: 50%;
+}
+
+.youtuberInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-nomal);
+    border-top: solid var(--color-grayText) 1px;
+    border-bottom: solid var(--color-grayText) 1px;
+}
+
+.interactionBtn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Btn {
+    color:var(--color-grayText);
+    background-color: transparent;
+    border-color:transparent;
+}
+
+.channel {
+    display: flex;
+}
+
+.youtuberImg {
+    width: 50px;
+    height: 50px;
+}
+
+.videoList {
+    width: 50%;
+}
+
+.video {
+    display: flex;
+    padding-bottom: 30px;
+}
