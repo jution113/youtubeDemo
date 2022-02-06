@@ -2,10 +2,13 @@
     --color-header: black;
     --color-logo: red;
     --color-ClickedBtn: blue;
+    --color-hashTag: blue;
     --color-whiteText:white;
     --color-grayText: gray;
+    --color-blackText: black;
 
     --fontSize-header: 1.5rem;
+    --fontsize-mini: 0.75rem;
 
     --padding-nomal: 8px 12px;
 }
@@ -34,14 +37,9 @@ header a {
     padding: var(--padding-nomal);
 }
 
-section {
-    /* width: 100vw;/ */
-    /* height: 100vh; */
-}
-
 section video {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 footer {
@@ -51,6 +49,42 @@ footer {
 
 .videoInfo {
     width: 50%;
+    padding: 0px 25px;
+}
+
+.addInfo {
+    display: flex;
+}
+
+.hashTag {
+    color: var(--color-hashTag);
+    padding-bottom: 12px;
+}
+
+.tittleBar {
+    padding-bottom: 8px;
+    display: flex;
+}
+
+.tittle {
+    padding-right: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.tittleExpandBtn {
+    background-color: transparent;
+    border-color: transparent;
+
+}
+
+.views, .timeRecord {
+    font-size: var(--fontsize-mini);
+    color: var(--color-grayText);
+    padding-right: 8px;
 }
 
 .youtuberInfo {
@@ -64,28 +98,99 @@ footer {
 .interactionBtn {
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    text-align: center;
 }
 
 .Btn {
     color:var(--color-grayText);
     background-color: transparent;
     border-color:transparent;
+    padding: var(--padding-nomal);
 }
 
 .channel {
     display: flex;
+    align-items: center;
 }
 
 .youtuberImg {
     width: 50px;
     height: 50px;
+    border-radius: 50px;
+    padding-right: 12px;
+}
+
+.channelSubscribeCount {
+    color:var(--color-grayText);
+    font-size: var(--fontsize-mini);
+}
+
+.subscribeBtn {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .videoList {
     width: 50%;
+    padding: 0px 25px;
+}
+
+.videoListHeader {
+    color:var(--color-grayText);
 }
 
 .video {
     display: flex;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.content {
+    width: auto;
+    height: 150px;
+}
+
+.videoShortInfo {
+    width: 100%;
+    height: 150px;
+    padding: 0px 12px;
+}
+
+.youtuberName, .viewCount {
+    color:var(--color-grayText);
+    font-size: var(--fontsize-mini);
+}
+
+.videoName {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.video a {
+    text-decoration: none;
+    color:var(--color-blackText);
+}
+
+@media screen and (max-width: 960px) {
+    body {
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoInfo {
+        width: 100%;
+    }
+
+    .videoList {
+        width: 100%;
+        padding-top: 25px;
+    }
 }
