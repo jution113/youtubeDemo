@@ -112,56 +112,99 @@ header .logo .fa-search {
 }
 
 /* Action Buttons */
-.actions {
+.info .actions {
     display: flex;
     justify-content: space-around;
     margin: var(--padding) 0;
 }
 
-.actions button {
+.info .actions button {
     display: flex;
     flex-direction: column;
     font-size: small;
     color: var(--gray-dark-color);
 }
 
-.actions button i {
+.info .actions button i {
     margin: 0 auto;
     margin-bottom: calc(var(--padding) / 2);
     font-size: 16px;
 }
 
-.actions button i.active {
+.info .actions button i.active {
     color:var(--blue-color);
 }
 
 /* Channel Description */
-.channel {
+.info .channel {
     display: flex;
     justify-content: space-between;
+    border-top: solid 1px var(--gray-light-color);
+    border-bottom: solid 1px var(--gray-light-color);
 }
 
-.channel .metadata {
+.info .channel .metadata {
     display: flex;
     align-items: center;
 }
 
-.channel .metadata img {
+.info .channel .metadata img {
     width: var(--avatar-size);
     height: var(--avatar-size);
     border-radius: 50%;
 }
 
-.channel .metadata .info {
+.info .channel .metadata .info {
     display: flex;
     flex-direction: column;
 }
 
-.channel .metadata .name {
+.info .channel .metadata .name {
     font-size: var(--font-medium);
 }
 
-.channel .metadata .subscribers {
+.info .channel .metadata .subscribers {
     font-size: var(--font-small);
     color: var(--gray-dark-color);
+}
+
+.info .channel .subscribe {
+    background-color: var(--red-color);
+    color:var(--whie-color);
+    text-transform: uppercase;
+    font-size: var(--font-medium);
+}
+
+/* Up Next */
+.upNext {
+    padding: var(--padding);
+}
+
+.upNext > .tittle {
+    font-size: var(--font-medium);
+    color: var(--gray-dark-color);
+    margin-bottom: calc(var(--padding) / 2);
+}
+
+.upNext .item {
+    display: flex;
+}
+
+.upNext .item .img {
+    flex: 1 1 35%
+}
+
+.upNext .item .img img {
+    width: 100%;
+}
+
+.upNext .item .info {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upNext .item .moreBtn {
+    flex: 5%;
+    height: 100%;
 }
